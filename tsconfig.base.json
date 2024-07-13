@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "zenova": ["libs/zenova/src/index.ts"]
+      "zenova": ["libs/zenova/src/index.ts"],
+      "zenova/components": ["libs/zenova/components/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
