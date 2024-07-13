@@ -1,0 +1,29 @@
+{
+  "name": "zenova",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/zenova/src",
+  "prefix": "z",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:package",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/zenova/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/zenova/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/zenova/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}
