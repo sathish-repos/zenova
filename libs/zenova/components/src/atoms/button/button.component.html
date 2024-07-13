@@ -1,7 +1,7 @@
 <button
   [attr.type]="type()"
   [attr.aria-label]="ariaLabel()"
-  [ngStyle]="style()"
+  [ngStyle]="getStyle()"
   [disabled]="disabled() || loading()"
   [ngClass]="buttonClass"
   (click)="onClick.emit($event)"

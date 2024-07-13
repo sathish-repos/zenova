@@ -1,7 +1,6 @@
-@import url(var(--theme));
+@import './theme/mode/zenova-light.scss';
 
 :root {
-  // theme change
   --theme: var(--theme-light);
   --theme-dark: './theme/mode/zenova-dark.scss';
   --theme-light: './theme/mode/zenova-light.scss';

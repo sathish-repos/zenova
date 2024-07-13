@@ -12,4 +12,11 @@ export type Severity =
   | null
   | undefined;
 
-export type ButtonSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'block';
+export type ButtonSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'full';
+
+export type ButtonWidth =
+  | 'auto'
+  | 'fit-content'
+  | 'max-content'
+  | 'min-content'
+  | undefined;

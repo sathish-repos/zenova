@@ -1,5 +1,10 @@
 import { Component, input, output, ViewEncapsulation } from '@angular/core';
-import { ButtonSize, IconPosition, Severity } from './models/button.types';
+import {
+  ButtonSize,
+  ButtonWidth,
+  IconPosition,
+  Severity,
+} from './models/button.types';
 import { NgClass, NgStyle } from '@angular/common';
 
 @Component({
@@ -34,11 +39,19 @@ export class ButtonComponent {
   tabindex = input<number | undefined>();
   text = input<boolean>(false);
   type = input<string>('button');
+  width = input<ButtonWidth>();
 
   // output emitters
   onBlur = output<FocusEvent>();
   onClick = output<MouseEvent>();
   onFocus = output<FocusEvent>();
+
+  getStyle() {
+    return {
+      ...this.style(),
+      width: this.width() ? this.width() : undefined,
+    };
+  }
 
   get buttonClass() {
     return {
