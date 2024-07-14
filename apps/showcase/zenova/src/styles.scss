@@ -1,7 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 // @include 'dist/libs/zenova/src/assets/zenova.scss';
 
-@import '../../../../dist/libs/zenova/src/assets/zenova.scss';
+// @import '../../../../dist/libs/zenova/src/assets/zenova.scss';
+
+@import 'node_modules/zenova/src/assets/zenova.scss';
 
 body {
   box-sizing: border-box;
