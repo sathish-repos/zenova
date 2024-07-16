@@ -1,1 +1,1 @@
-export * from './lib/zenova/zenova.component';
+export * from './lib/components/index';
